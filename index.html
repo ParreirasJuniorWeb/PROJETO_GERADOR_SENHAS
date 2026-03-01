@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script.js" defer></script>
+    <title>Gerador de Senhas com JavaScript</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/graphical-password-phone-tool-svgrepo-com.png" type="image/x-icon">
+    <!--Toastify-notifications JS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+</head>
+<body>
+    <div id="register-container">
+        <div id="register-banner">
+            <div id="banner-layer">
+                <h1>Seja bem-vindo</h1>
+            </div>
+        </div>
+        <div id="register-form">
+            <h2>Crie sua conta:</h2>
+            <p>Registre-se para utilizar todos as funcionalidades do sistema.</p>
+            <div class="form-control">
+                <label for="name">Nome:</label>
+                <input 
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Digite o seu nome"
+                />
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail:</label>
+                <input 
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Digite o seu e-mail"
+                />
+            </div>
+            <div class="form-control">
+                <label for="senha">Senha:</label>
+                <input 
+                    type="password"
+                    name="senha"
+                    id="senha"
+                    placeholder="Digite a sua senha"
+                />
+            </div>
+
+            <p>Quer ajuda para criar uma senha segura? 
+                <span id="open-generate-password">
+                    Clique aqui.
+                </span>
+            </p>
+
+            <div id="generate-options" class="hide">
+                <p>Selecione as opções que você deseja</p>
+                <div class="form-control">
+                    <label for="length">Quantidade de caracteres:</label>
+                    <input type="text" id="length" name="length" value="10" />
+                </div>
+                <div class="form-control">
+                    <label for="letters">Letras:</label>
+                    <input type="checkbox" id="letters" name="letters" checked />
+                </div>
+                <div class="form-control">
+                    <label for="numbers">Números:</label>
+                    <input type="checkbox" id="numbers" name="numbers" checked />
+                </div>
+                <div class="form-control">
+                    <label for="symbols">Símbolos:</label>
+                    <input type="checkbox" id="symbols" name="symbols" checked />
+                </div>
+                <button type="button" id="generate-password">Criar senha</button>
+            </div>
+
+            <div id="generated-password">
+                <p>Aqui está sua senha:</p>
+                <h4>******</h4>
+                <button id="copy-password">Copiar</button>
+            </div>
+
+            <div class="form-control">
+                <label for="confirmPassword">Confirmação de senha:</label>
+                <input 
+                    type="password"
+                    name="confirmPassword"
+                    id="confirmPassword"
+                    placeholder="Digite a sua senha novamente"
+                />
+            </div>
+            <input type="submit" value="Cadastrar" />
+        </div>
+    </div>
+</body>
+</html>

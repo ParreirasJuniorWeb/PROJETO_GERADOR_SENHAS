@@ -1,0 +1,219 @@
+/* Estilos Gerais do projeto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: "Poppins", "Helvetica", "Arial", "serif";
+    text-decoration: none;
+    outline: 0;
+    overflow-x: hidden;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+html, body {
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+    background: #0099ff;
+    background: linear-gradient(239deg,rgb(15, 148, 224) 0%, rgb(2, 111, 165) 100%);
+}
+
+#register-container {
+    max-width: 80%;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+#register-banner {
+    background:  url("../images/cyber-4084717_1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    border-radius: 3px;
+}
+
+#banner-layer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 100%);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#register-banner h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #FFF;
+    word-spacing: 50rem; 
+    padding: 1.5rem 1rem;
+}
+
+#register-form {
+    background-color: #fdfdfd;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.8rem;
+}
+
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+}
+
+#register-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: .4rem;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background-color: transparent;
+}
+
+.form-control input:focus-visible {
+    border-bottom: 2px solid #0099ff;
+}
+
+.form-control input:focus-visible~.form-control label {
+    color: #EEAECA;
+}
+
+#open-generate-password {
+    font-size: .8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+#open-generate-password:hover {
+    color: #0099ff;
+}
+
+#register-form #generated-password {
+    border: 1px solid #0099ff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.4rem;
+    color: #333;
+    text-align: center;
+    margin: 1rem 0;
+
+    display: none;
+}
+
+#register-form #generated-password p {
+    color: #81d340;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    font-size: .9rem;
+}
+
+#register-form input[type="submit"],
+#generate-options button,
+#copy-password  {
+    background-color: #0099ff;
+    color: #fff;
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: right;
+    transition: .9s ease-in-out;
+    font-weight: 700;
+}
+
+#register-form input[type="submit"]:hover,
+#generate-options button:hover,
+#copy-password:hover {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Segunda versão do generator-password */
+/* Options to create a password */
+#generate-options {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#generate-options .form-control {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#generate-options label {
+    font-size: 0.8rem;
+}
+
+#generate-options input[type="text"] {
+    min-width: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#generate-options input[type="checkbox"] {
+    accent-color: #90c6eb;
+}
+
+#generate-options button {
+    background-color: #0099ff;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#copy-password {
+    margin: 1rem auto;
+    background-color: transparent;
+    border: 2px solid #81d340;
+    color: #81d340;
+    padding: .5rem 1rem;
+}
+
+.hide {
+    display: none
+}
